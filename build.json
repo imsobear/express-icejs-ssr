@@ -1,0 +1,12 @@
+{
+  "ssr": true,
+  "entry": "client/app",
+  "alias": {
+    "@": "client"
+  },
+  "devServer": {
+    "writeToDisk": true
+  },
+  "plugins": [
+  ]
+}

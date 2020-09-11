@@ -1,0 +1,50 @@
+{
+  "name": "@alifd/scaffold-simple",
+  "version": "0.1.0",
+  "description": "使用 TypeScript，未使用任何 UI 库。",
+  "dependencies": {
+    "@types/react": "^16.9.20",
+    "@types/react-dom": "^16.9.5",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "@ice/spec": "^1.0.1",
+    "eslint": "^6.0.1",
+    "ice.js": "^1.0.0",
+    "nodemon": "^2.0.4",
+    "open-cli": "^6.0.1",
+    "stylelint": "^13.0.0"
+  },
+  "scripts": {
+    "start": "npm run start:server & npm run start:client & open-cli http://127.0.0.1:3000",
+    "start:server": "nodemon ./bin/www",
+    "start:client": "icejs start  --disable-open",
+    "build": "icejs build",
+    "lint": "npm run eslint && npm run stylelint",
+    "eslint": "eslint --cache --ext .js,.jsx ./",
+    "stylelint": "stylelint ./**/*.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alibaba-fusion/materials/tree/master/scaffolds/scaffold-simple"
+  },
+  "ideMode": {
+    "name": "ice-react"
+  },
+  "iceworks": {
+    "type": "react",
+    "adapter": "adapter-react-v3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "private": true,
+  "originTemplate": "@alifd/scaffold-simple"
+}
