@@ -4,6 +4,8 @@
   "alias": {
     "@": "client"
   },
+  "devPublicPath": "http://127.0.0.1:3333",
+  "publicPath": "/static",
   "devServer": {
     "writeToDisk": true
   },

@@ -4,10 +4,26 @@
 
 ```bash
 # 安装依赖
-$ npm install
+$ npm install --registry https://registry.npm.taobao.org
 
-# 启动服务
-$ npm start  # visit http://localhost:3000
+# 启动前端服务
+$ npm run start
+
+# 启动后端服务
+$ npm run start:server  # visit http://localhost:3000
+```
+
+![](https://img.alicdn.com/tfs/TB1zQ4uUrY1gK0jSZTEXXXDQVXa-997-266.png)
+
+
+## 部署
+
+```bash
+# 构建前端资源
+$ npm run build
+
+# 启动后端服务
+$ npm run start:server
 ```
 
 ## 目录

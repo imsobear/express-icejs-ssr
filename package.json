@@ -23,17 +23,20 @@
     "stylelint": "^13.0.0"
   },
   "scripts": {
-    "start": "npm run start:server & npm run start:client & open-cli http://127.0.0.1:3000",
-    "start:server": "nodemon ./bin/www",
-    "start:client": "icejs start  --disable-open",
+    "start:server": "node ./bin/www",
+    "start": "icejs start --disable-open",
     "build": "icejs build",
     "lint": "npm run eslint && npm run stylelint",
     "eslint": "eslint --cache --ext .js,.jsx ./",
-    "stylelint": "stylelint ./**/*.scss"
+    "stylelint": "stylelint ./**/*.scss",
+    "preinstall": "npx npm-force-resolutions"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/alibaba-fusion/materials/tree/master/scaffolds/scaffold-simple"
+  },
+  "resolutions": {
+    "react-app-renderer": "0.1.9-0"
   },
   "ideMode": {
     "name": "ice-react"
