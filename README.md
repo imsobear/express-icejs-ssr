@@ -4,7 +4,7 @@
 
 ```bash
 # 安装依赖
-$ npm install --registry https://registry.npm.taobao.org
+$ cnpm install
 
 # 启动前端服务
 $ npm run start

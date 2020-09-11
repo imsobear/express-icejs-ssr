@@ -28,8 +28,7 @@
     "build": "icejs build",
     "lint": "npm run eslint && npm run stylelint",
     "eslint": "eslint --cache --ext .js,.jsx ./",
-    "stylelint": "stylelint ./**/*.scss",
-    "preinstall": "npx npm-force-resolutions"
+    "stylelint": "stylelint ./**/*.scss"
   },
   "repository": {
     "type": "git",
