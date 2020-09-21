@@ -34,9 +34,6 @@
     "type": "git",
     "url": "https://github.com/alibaba-fusion/materials/tree/master/scaffolds/scaffold-simple"
   },
-  "resolutions": {
-    "react-app-renderer": "0.1.9-0"
-  },
   "ideMode": {
     "name": "ice-react"
   },
