@@ -1,10 +1,12 @@
 ## express+icejs+ssr
 
+核心代码：[server](/server/routes.index.js)
+
 ## 使用
 
 ```bash
 # 安装依赖
-$ cnpm install
+$ npm install --registry=https://registry.npm.taobao.org
 
 # 启动前端服务
 $ npm run start
@@ -14,7 +16,6 @@ $ npm run start:server  # visit http://localhost:3000
 ```
 
 ![](https://img.alicdn.com/tfs/TB1zQ4uUrY1gK0jSZTEXXXDQVXa-997-266.png)
-
 
 ## 部署
 
